@@ -5,7 +5,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <h1>JobFinder Pro</h1>
+          <h1>CareerConnect</h1>
         </div>
         <nav className={styles.nav}>
           <a href="#jobs">Jobs</a>

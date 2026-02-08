@@ -1,0 +1,56 @@
+.jobGrid {
+  padding: 4rem 0;
+  background-color: var(--bg-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+
+.sidebar {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.main h2 {
+  font-size: 2rem;
+  color: var(--primary-blue);
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .jobGrid {
+    padding: 2rem 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main h2 {
+    font-size: 1.5rem;
+  }
+}
